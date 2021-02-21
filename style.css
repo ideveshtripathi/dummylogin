@@ -299,7 +299,7 @@ footer{
 	}
 	.signup-form-area{
 	width: 360px;
-	height: calc(100vh - 26%);
+	height: calc(100vh - 30%);/*#01*/
 	border:2px solid #f0f2f5;
 	}
 
