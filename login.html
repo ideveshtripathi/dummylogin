@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogIn</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="main" id="main-section">
+<header>
+	<div class="header-left"></div>
+	<div class="header-right">
+		<div class="card">
+			<form class="form">
+				<input type="text" name="" placeholder="Username">
+				<input type="password" name="" placeholder="Password">
+				<button type="button" class="login-button">Log In</button>
+				<div class="hr-line"></div>
+				<button type="button" class="create-account" id="create-account">Create an Account</button>
+			</form>
+		</div>
+	</div>
+</header>
+<footer>
+	<div class="container">
+		<p class="footer-text p1">This is an E-learning Platform designed by <strong>Shivang Shrivastva</strong> &#44 <strong>Sonali Singh</strong> &#44 <strong>Shivani Sonkar</strong> &#38 <b>Devesh Tripathi</b> under the guidance of <strong>Garima Singh</strong> ma'am. </p>
+		<p class="footer-text p2">E-learning Platform</p>
+		<!--
+		<p class="footer-text">Department of Computer Science &#38 Technology &#44 School of Engineering</p>
+		<p class="footer-text">Babu Banarasi Das University &#44 Lucknow</p>-->
+	</div>
+</footer>
+</div>
+<section class="signup" id="signup-section">
+	<div class="signup-form">
+		<div class="signup-header">Create An Account</div>
+		<form class="signup-form-area">
+			<div class="form-grp">
+				<input type="text" name="" placeholder="First Name" class="form-fname">
+				<input type="password" name="" placeholder="Last Name" class="form-lname">
+			</div>
+			<div class="form-grp">
+				<input type="text" name="" placeholder="Mobile number or email address" class="form-username">
+			</div>
+			<div class="form-grp">
+				<input type="password" name="" placeholder="Craete Password" class="form-password">
+			</div>
+			<div class="label-start">Date of Birth</div>
+			<div class="form-grp">
+				<select class="form-dob">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<select class="form-dob">
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+					<option>Apr</option>
+					<option>May</option>
+				</select>
+				<select class="form-dob">
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+				</select>
+			</div>
+			<div class="label-start">Gender</div>
+			<div class="form-grp">
+				<div class="radio-box">
+				<label class="radio-label">Female</label>
+				<input type="radio" name="gender">
+				</div>
+				<div class="radio-box">
+					<label class="radio-label">Male</label>
+				<input type="radio" name="gender">
+				</div>
+				<div class="radio-box">
+					<label class="radio-label">Custom</label>
+				<input type="radio" name="gender">
+				</div>
+			</div>
+			<button class="signup-submit">Sign Up</button>
+		</form>
+		<div class="signup-footer">Go Back to <a href="">Login</a> Page</div>
+	</div>
+</section>
+<script type="text/javascript">
+	document.getElementById('create-account').addEventListener("click", function() {
+		document.getElementById('signup-section').style.display = "flex";
+		document.getElementById('main-section').style.display = "none";
+	});
+</script>
+</body>
+</html>
